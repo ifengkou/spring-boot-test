@@ -22,3 +22,8 @@ indent_size = 4
 
 [*.properties]
 indent_size = 0
+
+[*.yaml]
+indent_style = space
+indent_size = 4
+
