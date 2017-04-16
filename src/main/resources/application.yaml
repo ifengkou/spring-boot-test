@@ -1,12 +1,12 @@
 # application.yaml
 # Server settings (ServerProperties)
 server:
-  port: 8080
+  port: 9099
   address: 127.0.0.1
   sessionTimeout: 30
-  contextPath: /springboot
+  #contextPath: /springboot
 
-  # Tomcat specifics
+# Tomcat specifics
 tomcat:
     accessLogEnabled: false
     protocolHeader: x-forwarded-proto
