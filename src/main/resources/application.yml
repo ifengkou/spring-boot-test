@@ -1,4 +1,4 @@
-# application.yaml
+# application.yml
 # Server settings (ServerProperties)
 server:
   port: 9099
@@ -13,3 +13,16 @@ tomcat:
     remoteIpHeader: x-forwarded-for
     basedir:
     backgroundProcessorDelay: 30 # secs
+
+# logback
+#logging:
+    #config: classpath:logback.xml.backup
+
+log:
+    level:
+        project: INFO
+        program: INFO
+    filePath: logs/app.log
+    fileMaxSize: 50M
+    moduleName: springboot
+    package: cn.ifengkou.springboot

@@ -4,6 +4,8 @@ import cn.ifengkou.springboot.model.User;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
@@ -18,6 +20,7 @@ import java.util.*;
 @RequestMapping("/users")
 public class UserController {
 
+    private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
     // 创建线程安全的Map
     static Map<Long, User> users = Collections.synchronizedMap(new HashMap<Long, User>());
 
@@ -26,7 +29,10 @@ public class UserController {
     @ApiImplicitParam(name = "apiKey", value = "header中的数据", required = true, paramType = "header", dataType = "String")
     @RequestMapping(value="", method= RequestMethod.GET)
     public List<User> getUserList(@RequestHeader String apiKey) {
-        System.out.println("apiKey:"+apiKey);
+        LOGGER.warn("warn {}",apiKey);
+        LOGGER.debug("debug {}",apiKey);
+        LOGGER.info("info {}",apiKey);
+        LOGGER.error("error {}",apiKey);
         // 处理"/users/"的GET请求，用来获取用户列表
         // 还可以通过@RequestParam从页面中传递参数来进行查询条件或者翻页信息的传递
         List<User> userList = new ArrayList<>(users.values());

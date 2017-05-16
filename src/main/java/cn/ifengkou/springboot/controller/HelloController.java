@@ -15,7 +15,7 @@ import springfox.documentation.annotations.ApiIgnore;
 @RestController
 public class HelloController {
     @ApiOperation(value="测试接口", notes="直接反馈Hello World")
-    @RequestMapping(value = "/hello")
+    @RequestMapping(value = "/hello", method= RequestMethod.GET)
     public String index(){
         return "Hello World";
     }
