@@ -1,5 +1,10 @@
 package cn.ifengkou.springboot.model;
 
+import io.swagger.annotations.ApiModelProperty;
+import io.swagger.annotations.ApiParam;
+
+import java.util.Date;
+
 /**
  * Description:
  *
@@ -8,8 +13,15 @@ package cn.ifengkou.springboot.model;
  */
 public class User {
     private long id;
+    @ApiParam(value = "名称", required = true)
     private String name;
     private int age;
+    @ApiModelProperty(hidden = true)
+    private boolean isDeleted;
+    @ApiModelProperty(dataType = "java.util.Date")
+    private Date createTime;
+    @ApiModelProperty(dataType = "java.util.Date")
+    private Date updateTime;
 
     public long getId() {
         return id;
@@ -33,5 +45,29 @@ public class User {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public boolean isDeleted() {
+        return isDeleted;
+    }
+
+    public void setDeleted(boolean deleted) {
+        isDeleted = deleted;
+    }
+
+    public Date getCreateTime() {
+        return createTime;
+    }
+
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
+
+    public Date getUpdateTime() {
+        return updateTime;
+    }
+
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
     }
 }
