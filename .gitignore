@@ -1,24 +1,45 @@
-# EditorConfig is awesome: http://EditorConfig.org
+# Ignore Mac OS desktop services store
+.DS_Store
 
-# top-most EditorConfig file
-root = true
+# Ignore Windows desktop setting file
+desktop.ini
 
-# Unix-style newlines with a newline ending every file
-# Set default charset
-[*]
-charset = utf-8
-end_of_line = lf
-trim_trailing_whitespace = true
-insert_final_newline = true
+# Ignore nodejs & npm setting file
+config.js
+.cov
+coverage
+node_modules
+bower_components
+npm-debug.log
+.naeindex
+coverage.html
+.monitor
 
-[*.java]
-indent_style = space
-indent_size = 4
+dist/
+*.min.*.js
+*.min.*.css
+assets.json
 
+# Ignore temp files
+*.log
+*.csv
+*.dat
+*.out
+public/upload/*
+target/
+log/
+logs/
 
-[*.xml]
-indent_style = space
-indent_size = 4
+# Ignore IDE setting file
+.idea/
+*.iml
 
-[*.properties]
-indent_size = 0
+*.sublime-project
+*.sublime-workspace
+*.swp
+
+.classpath
+.project
+.settings/
+build/
+
