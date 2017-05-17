@@ -1,56 +1,24 @@
-.Ds_Store
-*.class
+# EditorConfig is awesome: http://EditorConfig.org
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
+# top-most EditorConfig file
+root = true
 
-# Package Files #
-*.jar
-*.war
-*.ear
+# Unix-style newlines with a newline ending every file
+# Set default charset
+[*]
+charset = utf-8
+end_of_line = lf
+trim_trailing_whitespace = true
+insert_final_newline = true
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+[*.java]
+indent_style = space
+indent_size = 4
 
-config.js
-.cov
-coverage
-node_modules
-bower_components
-npm-debug.log
-.naeindex
-coverage.html
-.monitor
 
-dist/
-*.min.*.js
-*.min.*.css
-assets.json
+[*.xml]
+indent_style = space
+indent_size = 4
 
-# Ignore Mac OS desktop services store
-.DS_Store
-
-# Ignore Windows desktop setting file
-desktop.ini
-
-*.log
-*.csv
-*.dat
-*.out
-
-.idea/
-public/upload/*
-*.iml
-
-*.sublime-project
-*.sublime-workspace
-*.swp
-
-target/
-log/
-
-.classpath
-.project
-.settings/
-build/
-
+[*.properties]
+indent_size = 0

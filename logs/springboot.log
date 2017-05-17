@@ -1,0 +1,3 @@
+2017-05-17 22:30:03.331 INFO  [main] cn.ifengkou.springboot.Application.logStarting():48 -Starting Application on sloong-MBP.lan with PID 7958 (/Users/sloong/Workspace/Github/spring-boot-test/target/classes started by sloong in /Users/sloong/Workspace/Github/spring-boot-test)
+2017-05-17 22:30:03.340 INFO  [main] cn.ifengkou.springboot.Application.logStartupProfileInfo():637 -No active profile set, falling back to default profiles: default
+2017-05-17 22:30:09.109 INFO  [main] cn.ifengkou.springboot.Application.logStarted():57 -Started Application in 7.289 seconds (JVM running for 8.334)
