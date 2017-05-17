@@ -15,8 +15,8 @@ tomcat:
     backgroundProcessorDelay: 30 # secs
 
 # logback
-#logging:
-    #config: classpath:logback.xml.backup
+logging:
+    config: classpath:logback.xml
 
 log:
     level:
