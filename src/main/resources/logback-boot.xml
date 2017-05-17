@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration scan="false" scanPeriod="60 seconds" debug="false">
-    <property resource="classpath:application.yml"/>
+    <property resource="logback.properties"/>
     <property name="log.project.level" value="${log.level.project}"/>
     <property name="log.program.level" value="${log.level.program}"/>
     <property name="log.base" value="${log.filePath}"/>
